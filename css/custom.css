@@ -15,12 +15,11 @@ body {
   line-height: 1.6;
   color: var(--color-text);
   background-color: var(--color-bg);
-  
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23011324" stroke-width="2"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/></svg>') 16 16, auto;
+  cursor: url('../image/cursor-normal.png'), auto; 
 }
 
-a, button, .btn, .nav-link, .custom-btn-cursor, input[type="submit"], input[type="reset"] {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="%23089aa5" stroke-width="2"><path d="M17 8h1a4 4 0 1 1 0 8h-1M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><path d="M8 2v2m4-2v2m4-2v2"/></svg>') 16 16, pointer;
+a, button, .btn, .nav-link, input[type="submit"] {
+  cursor: url('../image/cursor-hover.png'), pointer;
 }
 
 .site-header {
@@ -78,26 +77,12 @@ a, button, .btn, .nav-link, .custom-btn-cursor, input[type="submit"], input[type
   filter: drop-shadow(0 0 15px rgba(89, 239, 250, 0.4));
 }
 
-.combined-block {
-  background-color: var(--color-surface-light);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 8px 24px rgba(1, 19, 36, 0.09);
-}
-
-.combined-block__img-wrapper {
-  background-color: var(--color-surface);
-  min-height: 250px;
-}
-
 .section__title {
   color: var(--color-text);
   font-size: 24px;
   border-bottom: 3px solid var(--color-primary);
   padding-bottom: 5px;
   display: inline-block;
-  margin-bottom: 15px;
 }
 
 .about-us__list, .advantages__list {
@@ -141,24 +126,16 @@ a, button, .btn, .nav-link, .custom-btn-cursor, input[type="submit"], input[type
   border-left: 6px solid var(--color-primary) !important;
 }
 
-.product-card__title {
-  color: var(--color-primary-dark);
-}
-
-.btn-primary {
+.btn-info {
   background-color: var(--color-primary) !important;
   border-color: var(--color-primary) !important;
-  color: var(--color-text) !important;
-  font-weight: bold;
-  border-width: 2px;
-  box-shadow: 0 4px 12px rgba(89, 239, 250, 0.3);
   transition: all 0.2s;
 }
 
-.btn-primary:hover {
-  background-color: transparent !important;
-  color: var(--color-primary) !important;
-  transform: translateY(-2px);
+.btn-info:hover {
+  background-color: var(--color-primary-dark) !important;
+  border-color: var(--color-primary-dark) !important;
+  color: #ffffff !important;
 }
 
 .btn-outline-primary {
