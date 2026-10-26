@@ -192,3 +192,23 @@ a, button, .btn, .nav-link, input[type="submit"] {
   color: #7fcbd1;
   font-size: 14px;
 }
+
+.combined-block-dark {
+  background-color: var(--color-surface);
+  color: var(--color-border);
+}
+
+.combined-block-dark .section__title {
+  color: var(--color-primary);
+  border-bottom-color: var(--color-primary-dark);
+}
+
+.combined-block-dark .advantages__item {
+  background-color: rgba(89, 239, 250, 0.1);
+  color: var(--color-border);
+  border-left-color: var(--color-primary);
+}
+
+.combined-block-dark .about-us__item::marker {
+  color: var(--color-primary);
+}
